@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.group{
+
+display: inline-block;
+
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+</head>
+<body>
+
+<button class="button button1">New Configuration</button>
+<button class="button button1">Import Configuration</button>
+<button class="button button1">Export Configuration</button>
+
+<br></br>
+
+<button class="button button1">Load Defaults</button>
+<button class="button button1">View Defaults</button>
+<br></br>
+<img src="" alt=" " width="460" height="345">
+<br></br>
+<form action="">
+<label for="desc">Project Description</label>
+<textarea id="desc" name="desc" rows="4" cols="50">
+  </textarea>
+  
+</form>
+<br></br>
+
+	  <div class="col-md-12 form-group mb-3">
+                  <label for="MassUnit" class="col-form-label">Mass Unit</label>
+                  <select class="custom-select" id="MassUnit" name="MassUnit">
+    <option selected>Choose...</option>
+    <option value="G">G</option>
+    <option value="KG">KG</option>
+    <option value="Lb">Lb</option>
+   
+  </select>
+  
+              <label for="temp" class="col-form-label">Temprature Unit</label>
+                  <select class="custom-select" id="temp" name="temp">
+    <option selected>Choose...</option>
+    <option value="C">C</option>
+    <option value="F">F</option>
+    <option value="K">K</option>
+   
+  </select>
+                </div>
+				<br></br>
+				
+<form action="">
+  <label for="Mass">Mass : </label>
+  <input type="text" id="Mass" name="Mass"><br><br>
+  <label for="temp">Temprature : </label>
+  <input type="text" id="temp" name="temp"><br><br>
+</form>
+
+
+
+
+<form>
+
+<label for="fre">Frequency : </label> <br />
+<br></br>
+<div class="group">
+
+<label for="start">Start</label> <br />
+
+<input type="text" name="start" />
+
+</div>
+
+ 
+
+<div class="group">
+
+<label for="step">Step</label> <br />
+
+<input type="text" name="step" />
+
+</div>
+
+<div class="group">
+
+<label for="end">End</label> <br />
+
+<input type="text" name="end" />
+
+</div>
+
+</form>
+
+</body>
+</html>          
+
+
+
+
+	
+				
+				
+				
+				
